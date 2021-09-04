@@ -1,0 +1,157 @@
+\documentclass[dvipdfmx]{beamer}
+%\documentclass[dvipdfm,cjk]{beamer} %% オプションは環境や利用するプログラムに
+%\documentclass[dvips,cjk]{beamer}   %% よって変える
+
+\usepackage{bxdpx-beamer}% dvipdfmxなので必要
+\usepackage{pxjahyper}% 日本語で'しおり'したい
+\usepackage{minijs}% min10ヤダ
+\usepackage{comment}
+\usepackage{color}
+\renewcommand{\kanjifamilydefault}{\gtdefault}% 既定をゴシック体に
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+
+\AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Boadilla}
+%\usecolortheme[RGB={30,30,137}]{structure}
+
+%\usefonttheme{professionalfonts}       %% 数式の文字を通常の LaTeX と同じに
+
+\setbeamertemplate{theorems}[numbered]  %% 定理に番号をつける
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{proposition}[thm]{Proposition}
+\theoremstyle{example}
+\newtheorem{exam}[thm]{Example}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{question}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+
+\definecolor{ired}{rgb}{0.72, 0.33, 0.31}
+\definecolor{iblue}{rgb}{0.42, 0.56, 0.75}
+
+\setbeamertemplate{itemize item}{$\vartriangleright$}
+\setbeamertemplate{itemize subitem}{$\blacktriangleright$}
+\setbeamertemplate{itemize subsubitem}{$\blacktriangleright$}
+
+\begin{document}
+\title[時間を作る思考]{時間を作る思考}
+\author[dokaraya]{dokaraya}
+\date{\today}
+
+\begin{frame}
+\titlepage
+\nocite{*}
+\end{frame}
+
+\begin{frame}
+  \frametitle{目的と結論}
+  \begin{block}{目的}
+    \begin{itemize}
+      \item 時間を作るための具体的な方法を学ぶ
+    \end{itemize}
+  \end{block}
+
+  \begin{exampleblock}{結論}
+    \begin{itemize}
+      \item 時間を作るための時間を作る
+      \item 「選択と集中」の戦略を用いる
+      \item 自分の時間を大切にする
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}[t]{時間を作るための時間を作る}
+  \begin{block}{毎日決めるべきこと}
+    \begin{itemize}
+      \item 今日の最優先事項は何か？
+      \begin{itemize}
+        \item 緊急性の高い事項は無いか？
+        \item 今日を満足した一日にするためにやりたいことは？
+        \item 今日を振り返る時喜びを感じるためにやりたいことは？
+      \end{itemize}
+      \item 最優先事項の具体的なゴールは？
+      \item 最優先事項の障害となるものは？その対処法は？
+    \end{itemize}
+  \end{block}
+
+  \begin{exampleblock}{毎日やるべきこと}
+    \begin{itemize}
+      \item エネルギーの補充をする
+      \begin{itemize}
+        \item よい食事・よい運動・よい時間
+      \end{itemize}
+      \item 今日の最優先事項は達成できたか考える
+      \begin{description}[] \itemsep 0pt \parskip 0pt \parsep 0pt \leftmargin 10pt
+        \item[\alert{Yes}] すばらしい！自分で自分を褒めて！
+        \item[\structure{No}] 何が障害だったか？その対処案は？
+      \end{description}
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}{「選択と集中」の戦略を用いる}
+  \begin{block}{選択と集中}
+    \begin{itemize}
+      \item 最優先事項を選択したらそれに集中する
+      \begin{itemize}
+        \item 集中を妨げるものを抑制する
+        \begin{itemize}
+          \item 自身からスマホを遠ざける
+          \item メールや時事のチェックを後回しにする
+          \item 今やっていること以外のことが気になったらメモする
+          \item 雑務は「雑務をやる時間」を決めてから
+        \end{itemize}
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{自分の時間を大切にする}
+  \begin{block}{大切にすべき時間の例}
+    \begin{itemize}
+      \item 選択した事項を実行する時間
+      \item 大切な人と触れ合う時間
+      \item 習慣となった良い時間
+    \end{itemize}
+  \end{block}
+
+  \begin{exampleblock}{行うべきこと}
+    \begin{itemize}
+      \item それらを中心にスケジュールを組む
+      \item それ以外の時間をなるべく短くする
+      \item 時間を浪費するものに引き寄せられない
+    \end{itemize}
+  \end{exampleblock}
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{目的と結論(再掲)}
+  \begin{block}{目的}
+    \begin{itemize}
+      \item 時間を作るための具体的な方法を学ぶ
+    \end{itemize}
+  \end{block}
+
+  \begin{exampleblock}{結論}
+    \begin{itemize}
+      \item 時間を作るための時間を作る
+      \item 「選択と集中」の戦略を用いる
+      \item 自分の時間を大切にする
+    \end{itemize}
+  \end{exampleblock}
+  \begin{itemize}
+    \item それではよい時間を！
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{参考文献}
+    \scriptsize
+    \beamertemplatetextbibitems
+    \bibliographystyle{junsrt}
+    \bibliography{ref}
+\end{frame}
+\end{document}
